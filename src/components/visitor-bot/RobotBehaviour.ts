@@ -59,7 +59,7 @@ export class RobotBehaviour {
     this.enterState("GREETING", "Oh, hello.");
   }
 
-  public update(mouseX: number, mouseY: number) {
+  public update() {
     this.currentLookAt.x += (this.targetLookAt.x - this.currentLookAt.x) * 0.05;
     this.currentLookAt.y += (this.targetLookAt.y - this.currentLookAt.y) * 0.05;
 

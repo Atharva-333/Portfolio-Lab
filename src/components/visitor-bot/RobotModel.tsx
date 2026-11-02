@@ -11,7 +11,7 @@ interface RobotModelProps {
 export function RobotModel({ behaviour }: RobotModelProps) {
   const group = useRef<Group>(null);
   const { scene, animations } = useGLTF("/models/RobotExpressive.glb");
-  const { actions, mixer } = useAnimations(animations, group);
+  const { actions } = useAnimations(animations, group);
 
   // ==========================================
   // CHANGE ROBOT COLOR HERE

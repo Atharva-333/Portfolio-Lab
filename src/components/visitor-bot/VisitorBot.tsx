@@ -31,7 +31,7 @@ export default function VisitorBot() {
 
   const behaviourRef = useRef<RobotBehaviour | null>(null);
   if (!behaviourRef.current) {
-    behaviourRef.current = new RobotBehaviour((state, msg) => {
+    behaviourRef.current = new RobotBehaviour((_state, msg) => {
       if (msg) setBubbleMessage(msg);
       else setBubbleMessage(null);
     });
@@ -151,7 +151,7 @@ export default function VisitorBot() {
     if (isDismissed) return;
     let frameId: number;
     const tick = () => {
-      behaviourRef.current?.update(0, 0);
+      behaviourRef.current?.update();
       frameId = requestAnimationFrame(tick);
     };
     tick();
