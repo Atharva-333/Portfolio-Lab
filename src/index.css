@@ -3,15 +3,21 @@
 
 :root {
   color-scheme: dark;
-  --background: #0b1120;
-  --surface: #111827;
-  --card: #1e293b;
-  --border: #334155;
-  --primary: #3b82f6;
-  --success: #22c55e;
-  --warning: #f59e0b;
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
+
+  --background: #07060a;
+  --surface: #100d16;
+  --card: #191323;
+  --border: #30253f;
+
+  --primary: #b59ddd;
+  --success: #9bdbb5;
+  --warning: #e9bd78;
+
+  --text-primary: #e8e6eb;
+  --text-secondary: #aaa2b7;
+
+  --secondary: #3f1c8d;
+  --accent: #753df0;
 }
 
 html {
